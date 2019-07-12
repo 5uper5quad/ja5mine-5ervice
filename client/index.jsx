@@ -25,7 +25,7 @@ const total = 26; // total number of values
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { 
+    this.state = {
       reviews: [],
       data: [],
       offset: 0,
@@ -69,7 +69,7 @@ class App extends React.Component {
   render () {
     return (
       <BodyContainer>
-  
+
         <TopContainer>
           <ReviewTitle>
           {this.state.reviewsTotal.length} Reviews
@@ -99,14 +99,14 @@ class App extends React.Component {
         <div>
         { this.state.querySubmitted ?
           <ReviewSearchContainer>
-            <ReviewSearchReturn> 
-            {this.state.reviews.length} guests have mentioned 
+            <ReviewSearchReturn>
+            {this.state.reviews.length} guests have mentioned
             </ReviewSearchReturn>
 
-            <SearchWord> 
-              "{this.state.query}" 
+            <SearchWord>
+              "{this.state.query}"
             </SearchWord>
-            <Link onClick={this.handleClick} style={{cursor: 'pointer'}}>Back to all reviews</Link> 
+            <Link onClick={this.handleClick} style={{cursor: 'pointer'}}>Back to all reviews</Link>
           </ReviewSearchContainer> : null
         }
         </div>
@@ -144,7 +144,7 @@ const FormContainer = styled.div`
 `;
 
 const ReviewTitle = styled.div`
-  font-family: 'MontrealRegular';
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-style: normal;
   color: #404040;
@@ -200,7 +200,7 @@ const ReviewSearchReturn = styled.div`
 const SearchWord = styled.p`
   color: #404040;
   font-size: 14px;
-  font-family: 'MontrealRegular';
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-style: normal;
   margin-right: 224px;

@@ -14,13 +14,13 @@ var ReviewEntry = ({review}) => {
           </ImageContainer>
           <NameAndDateContainer>
             <UserNameContainer> { review.name } </UserNameContainer>
-            <PostDate> 
-            { faker.date.month() } { review.postDate } 
+            <PostDate>
+            { faker.date.month() } { review.postDate }
             </PostDate>
           </NameAndDateContainer>
         </TopContainer>
-        <Review> 
-          { review.review } 
+        <Review>
+          { review.review }
         </Review>
       </Wrapper>
     )
@@ -42,7 +42,7 @@ const TopContainer = styled.div`
   padding: 10px 0;
 `;
 
-const Image = styled.img` 
+const Image = styled.img`
   border-radius: 50%;
 `;
 
@@ -61,7 +61,7 @@ const Review = styled.div`
 `;
 
 const UserNameContainer = styled.div`
-font-family: 'MontrealRegular';
+  font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #404040;
